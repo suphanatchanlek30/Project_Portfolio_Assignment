@@ -1,0 +1,198 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ตั้งค่าสี */
+:root {
+    --secondary-color: #010101;
+    --text-dark: #C0C0C0;
+    --text-light: #FFFFFF;
+    --extra-light: #E3E4E6;
+    --white: #FFFFFF;
+    --max-width: 1200px;
+    --gradient-text: linear-gradient(to right, #FAF1F1 15%, #600DD1 70%);
+}
+
+/* ตั้งค่า Setting Start*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section__container {
+    max-width: var(--max-width);
+    padding: 5rem 1rem;
+    margin: auto;
+}
+
+.section__header {
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.section__subheader {
+    color: var(--text-light);
+}
+
+img {
+    width: 100%;
+    display: flex
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background: var(--secondary-color);
+}
+/* ตั้งค่า Setting End*/
+
+/* Navbar Start */
+.nav_bar {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo {
+    flex: 1;
+}
+
+.nav_logo a {
+    font-size: 24px;
+    font-weight: 700;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav_links {
+    /* ไม่ทำเป็น list */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.link a {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--extra-light)
+}
+
+.link a:hover {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav_git {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.nav_git a {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--extra-light)
+}
+
+.nav_git a:hover {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav_git i {
+    background-color: #000000;
+    color: #E3E4E6;
+    font-size: 35px;
+}
+/* Navbar End */
+
+/* Header Start */
+.header {
+    background-color: var(--secondary-color);
+}
+
+.header_container {
+    display: grid;
+    grid-template-columns: 
+    minmax(0, 1fr)
+    minmax(0, calc(var(--max-width) / 2))
+    minmax(0, calc(var(--max-width) / 2))
+    minmax(0, 1fr);
+}
+
+.header_content {
+    padding: 5rem 1rem;
+    grid-column: 2/3;
+}
+
+.header_content p {
+    margin-top: 1rem;
+    color: var(--text-dark);
+    text-transform: uppercase;
+    font-size: 20;
+    font-weight: 600;
+}
+
+.header_content h1 {
+    margin-bottom: 2rem;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 4rem;
+    color: var(--text-light);
+}
+.header_content span {
+    font-size: 4rem;
+    font-weight: 600;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.header_content p {
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header_btns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header_image {
+    grid-column: 3/4;
+}
+
+.header_image img {
+    height: 500px;
+    width: 700px;
+    /* แสดงภาพให้เต็ม */
+    object-fit: cover;
+}
+/* Header End */
