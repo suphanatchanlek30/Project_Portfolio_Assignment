@@ -7,6 +7,7 @@
     <!-- Link CSS -->
     <link rel="stylesheet" href="mystyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
@@ -19,6 +20,7 @@
             <ul class="nav_links">
                 <li class="link"><a href="#home">HOME</a></li>
                 <li class="link"><a href="#about">ABOUT</a></li>
+                <li class="link"><a href="#video">VIDEO</a></li>
                 <li class="link"><a href="#project">PROJECT</a></li>
                 <li class="link"><a href="#contact">CONTACT</a></li>
             </ul>
@@ -40,24 +42,192 @@
                     <span>SUPHANAT</span>
                 </h1>
                 <p>
-                    <!-- text test -->
-                    Lorem ipsum dolor sit amet consectetur adipisicing 
-                    elit. Mollitia, sequi amet quidem laudantium aut 
-                    voluptate nesciunt repellat nemo fuga ratione.
+                    I am studying in the Department of Computer Science <br> and am interested in becoming a Web Developer <br> and working with Machine Learning.
                 </p>
                 <div class="header_btns">
-                    <button class="btn btn__secondary">RESUME</button>
+                    <a href="https://www.google.com" target="_blank" class="btn_secondary">Resume</a>
                 </div>
             </div>
             <div class="header_image">
-                <!-- image test -->
-                <!-- <img src="resources/mypic.png" alt="aresources/mypic.png" />  -->
+                <img src="resources/img8.png" alt="aresources/mypic.png" /> 
             </div>
         </div>
     </header>
     <!-- Header End -->
 
-    
-    
+    <!-- Section About Start -->
+    <section class="section__container about_container" id="about">
+        <!-- ฝั่งซ้าย -->
+        <div class="about__image">
+            <img src="resources/img1.png" alt="resources/mypic.png">
+        </div>
+        <!-- ฝั่งขวา -->
+        <div class="about__content">
+            <h1>
+                <span>ABOUT US</span>
+            </h1>
+            <h2 class="section__header">
+                Suphanat Chanlek
+            </h2>
+            <p class="section__subhesder">
+                You Call me Arm. I'm currently studying.  Department of Computer Science Thammasat University
+                <br>
+                Emali : suphanatchanlek@gmail.com
+            </p>
+
+            <div class="about__grid">
+                <div class="about__card">
+                    <h4>University 2024 - present
+                    </h4>
+                    <p>Thammasat University</p>
+                </div>
+                <div class="about__card">
+                    <h4>high school education </h4>
+                    <p>Watkhemapirataram School</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section About End -->
+
+    <!-- Section Video Start -->
+    <section class="section__container video_container" id="video">
+        <div class="video__content">
+            <h1>
+                <span>Video</span>
+            </h1>
+            <p class="subhesder">
+                Video introducing yourself.
+            </p>
+
+            <!-- video -->
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/Z5fmOKBduUo?si=jioywZKx8um9DuIe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Section Video End -->
+
+    <!-- Section Project Start -->
+    <section class="section__container project_container" id="project">
+        <div class="video__content">
+            <h1>
+                <span>Project</span>
+            </h1>
+            
+            <div class="menu">
+                <input type="radio" name="menu" id="menu1" checked>
+                <label for="menu1">Project</label>
+                <input type="radio" name="menu" id="menu2">
+                <label for="menu2">Hackathon</label>
+        
+                <!-- Project -->
+                <div class="content content1">
+                    <div class="flex_2">
+                        <!-- ฝั่งซ้าย -->
+                        <div class="project__image">
+                            <img src="resources/img4.png" style="border-radius: 15px;" alt="resources/mypic.png">
+                        </div>
+                        <!-- ฝั่งขวา -->
+                        <div class="project__content">
+                            <h2 class="project_h2">
+                                Break Time Coffee
+                            </h2>
+                            <p class="project_p">
+                                UX/UI Design This application is designed to cater to the needs of 
+                                coffee lovers who wish to find coffee shops nearby or in a desired location. 
+                                With an easy-to-use and user-friendly interface. <br>
+                                <a href="https://www.figma.com/design/ZSjDtv0GSpBGcWmUFUBvLA/Break-Time-Coffee?node-id=0-1&t=wsMTWeKHoI4Tg2Qr-1" target="_blank">Link</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex_2">
+                        <!-- ฝั่งซ้าย -->
+                        <div class="project__image">
+                            <img src="resources/img3.png" style="border-radius: 15px;" alt="resources/mypic.png">
+                        </div>
+                        <!-- ฝั่งขวา -->
+                        <div class="project__content">
+                            <h2 class="project_h2">
+                                Hoo Bank
+                            </h2>
+                            <p class="project_p">
+                                Front-end : I'm building a landing page using React.js, focusing on clearly decomposing it and learning about different aspects of its structure, and how I can further develop it in the future.<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hackathon -->
+                <div class="content content2">
+                    <div class="flex_2">
+                        <!-- ฝั่งซ้าย -->
+                        <div class="project__image">
+                            <img src="resources/hackathon4.png" style="border-radius: 15px;" alt="resources/mypic.png">
+                        </div>
+                        <!-- ฝั่งขวา -->
+                        <div class="project__content" style="padding-left: 1.5rem;">
+                            <h2 class="project_h2" >
+                                goIT Digital Innovation
+                            </h2>
+                            <p class="project_p">
+                                I won 2nd place in the Digital Innovation competition with the project "Growth Work," an application designed to address issues related to the SDG 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex_2">
+                        <!-- ฝั่งซ้าย -->
+                        <div class="project__image">
+                            <img src="resources/hackathon2.png" style="border-radius: 15px;" alt="resources/mypic.png">
+                        </div>
+                        <!-- ฝั่งขวา -->
+                        <div class="project__content">
+                            <h2 class="project_h2">
+                                SCG Young Talent Program 2024
+                            </h2>
+                            <p class="project_p">
+                                I have gained experience in teamwork and developed 
+                                problem-solving strategies, along with creating practical business models.
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Project End -->
+
+    <!-- Section Contact Start -->
+    <footer class="section_footer" id="contact">
+            <div class="footer">
+                <h1>
+                    <span>CONTACT</span>
+                </h1>
+                <div class="row">
+                    <a href="https://www.facebook.com/profile.php?id=100017199271149" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.instagram.com/suphanatttt/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/suphanat-chanlek-944802305/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                    <a href="https://github.com/suphanatchanlek30" target="_blank"><i class='bx bxl-github' ></i></a>
+                </div>
+            
+            <div class="row">
+                <ul>
+                    <li class="link"><a href="#home">HOME</a></li>
+                    <li class="link"><a href="#about">ABOUT</a></li>
+                    <li class="link"><a href="#video">VIDEO</a></li>
+                    <li class="link"><a href="#project">PROJECT</a></li>
+                    <li class="link"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            
+                <div class="row">
+                    Copyright © 2024 By Suphanat Chanlek
+                </div>
+            </div>
+    </footer>   
+    <!-- Section Contact End -->
 </body>
 </html>
